@@ -3,70 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicago Rooftop Bars & Speakeasies</title>
+    <title>Chicago After Dark | Rooftop Bars & Speakeasies</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Art Deco Header -->
+    <!-- Decorative Art Deco Corner Elements -->
+    <div class="deco-corner top-left"></div>
+    <div class="deco-corner top-right"></div>
+    <div class="deco-corner bottom-left"></div>
+    <div class="deco-corner bottom-right"></div>
+
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-overlay"></div>
-        <div class="art-deco-border top"></div>
         <div class="hero-content">
-            <div class="deco-ornament top">
-                <svg viewBox="0 0 200 50" class="deco-svg">
-                    <path d="M0,25 L50,0 L100,25 L150,0 L200,25" stroke="currentColor" fill="none" stroke-width="2"/>
-                    <circle cx="100" cy="25" r="8" fill="currentColor"/>
-                    <circle cx="50" cy="12" r="4" fill="currentColor"/>
-                    <circle cx="150" cy="12" r="4" fill="currentColor"/>
-                </svg>
+            <div class="deco-line"></div>
+            <h1>Chicago After Dark</h1>
+            <p class="tagline">Rooftop Bars & Hidden Speakeasies</p>
+            <div class="deco-divider">
+                <span class="diamond"></span>
+                <span class="diamond"></span>
+                <span class="diamond"></span>
             </div>
-            <h1>Chicago</h1>
-            <h2>Rooftop Bars & Speakeasies</h2>
-            <p class="tagline">Experience the City's Most Exclusive Hidden Gems</p>
-            <div class="deco-ornament bottom">
-                <svg viewBox="0 0 200 50" class="deco-svg">
-                    <path d="M0,25 L50,50 L100,25 L150,50 L200,25" stroke="currentColor" fill="none" stroke-width="2"/>
-                    <circle cx="100" cy="25" r="8" fill="currentColor"/>
-                    <circle cx="50" cy="38" r="4" fill="currentColor"/>
-                    <circle cx="150" cy="38" r="4" fill="currentColor"/>
-                </svg>
-            </div>
+            <p class="subtitle">Discover the Windy City's Most Exclusive Nightlife Destinations</p>
         </div>
-        <div class="art-deco-border bottom"></div>
         <nav class="main-nav">
             <a href="#rooftops" class="nav-link">Rooftop Bars</a>
-            <span class="nav-divider">&#9830;</span>
             <a href="#speakeasies" class="nav-link">Speakeasies</a>
         </nav>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
     </header>
 
     <!-- Rooftop Bars Section -->
-    <section id="rooftops" class="section">
+    <section id="rooftops" class="venue-section">
         <div class="section-header">
-            <div class="deco-line left"></div>
-            <h2>Rooftop Bars</h2>
-            <div class="deco-line right"></div>
+            <div class="deco-frame">
+                <h2>Rooftop Bars</h2>
+            </div>
+            <p class="section-subtitle">Elevated Experiences Above the Skyline</p>
         </div>
-        <p class="section-intro">Elevate your evening above the Chicago skyline</p>
 
-        <div class="venues-grid">
+        <div class="venue-grid">
             <!-- Cindy's -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="cindys">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <rect x="20" y="40" width="60" height="50" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <polygon points="50,10 85,40 15,40" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="35" y="60" width="15" height="30" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <rect x="55" y="50" width="12" height="12" stroke="currentColor" fill="none" stroke-width="1"/>
-                        </svg>
+            <article class="venue-card" data-venue="cindys">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=400&fit=crop" alt="Cindy's Rooftop - Elegant rooftop bar overlooking Millennium Park">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Cindy's</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -77,68 +69,58 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 792-3502
                         </p>
-                        <p class="website">
+                        <a href="https://www.cindysrooftop.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="http://www.cindysrooftop.com/" target="_blank" rel="noopener">cindysrooftop.com</a>
-                        </p>
+                            cindysrooftop.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=12+S+Michigan+Ave+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=12+S+Michigan+Ave+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- LH Rooftop -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="lh-rooftop">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <rect x="10" y="30" width="25" height="60" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="38" y="20" width="25" height="70" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="66" y="35" width="25" height="55" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="15" y1="45" x2="30" y2="45" stroke="currentColor" stroke-width="1"/>
-                            <line x1="15" y1="60" x2="30" y2="60" stroke="currentColor" stroke-width="1"/>
-                        </svg>
+            <article class="venue-card" data-venue="lh-rooftop">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&h=400&fit=crop" alt="LH Rooftop - Panoramic views of Chicago River">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>LH Rooftop</h3>
                     <div class="venue-details">
                         <p class="address">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            85 E Wacker Dr, 22nd Floor, Chicago, IL 60601
+                            85 E Wacker Dr, Chicago, IL 60601
                         </p>
                         <p class="phone">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 357-1200
                         </p>
-                        <p class="website">
+                        <a href="https://londonhousechicago.com/rooftop/" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://londonhousechicago.com/rooftop/" target="_blank" rel="noopener">londonhousechicago.com</a>
-                        </p>
+                            londonhousechicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=85+E+Wacker+Dr+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=85+E+Wacker+Dr+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- Raised -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="raised">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <path d="M20,90 L20,50 L50,20 L80,50 L80,90" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="35" y="60" width="30" height="30" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <circle cx="50" cy="45" r="8" stroke="currentColor" fill="none" stroke-width="1"/>
-                        </svg>
+            <article class="venue-card" data-venue="raised">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=600&h=400&fit=crop" alt="Raised - Urban rooftop bar with city views">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Raised</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -149,32 +131,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 795-3444
                         </p>
-                        <p class="website">
+                        <a href="https://www.raisedbarchicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://www.raisedbarchicago.com/" target="_blank" rel="noopener">raisedbarchicago.com</a>
-                        </p>
+                            raisedbarchicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=1+W+Upper+Wacker+Dr+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1+W+Upper+Wacker+Dr+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- I|O Godfrey -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="io-godfrey">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <ellipse cx="50" cy="70" rx="35" ry="15" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <path d="M30,70 Q30,30 50,25 Q70,30 70,70" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="50" y1="25" x2="50" y2="15" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="50" cy="12" r="3" fill="currentColor"/>
-                        </svg>
+            <article class="venue-card" data-venue="io-godfrey">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=400&fit=crop" alt="I|O Godfrey - Urban roofscape with fire pits">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>I|O Godfrey</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -185,72 +162,58 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 374-1830
                         </p>
-                        <p class="website">
+                        <a href="https://iogodfrey.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://iogodfrey.com/" target="_blank" rel="noopener">iogodfrey.com</a>
-                        </p>
+                            iogodfrey.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=127+W+Huron+St+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=127+W+Huron+St+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- Cerise -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="cerise">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <path d="M25,85 L25,45 L50,20 L75,45 L75,85" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="40" y="55" width="20" height="30" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <polygon points="50,20 25,45 75,45" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="35" y1="50" x2="35" y2="65" stroke="currentColor" stroke-width="1"/>
-                            <line x1="65" y1="50" x2="65" y2="65" stroke="currentColor" stroke-width="1"/>
-                        </svg>
+            <article class="venue-card" data-venue="cerise">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=600&h=400&fit=crop" alt="Cerise at Virgin Hotels - Vibrant rooftop lounge">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Cerise at Virgin Hotels</h3>
                     <div class="venue-details">
                         <p class="address">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            203 N Wabash Ave, Floor 26, Chicago, IL 60601
+                            203 N Wabash Ave, Chicago, IL 60601
                         </p>
                         <p class="phone">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 940-4774
                         </p>
-                        <p class="website">
+                        <a href="https://virginhotels.com/chicago" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://virginhotels.com/chicago/" target="_blank" rel="noopener">virginhotels.com</a>
-                        </p>
+                            virginhotels.com/chicago
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=203+N+Wabash+Ave+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=203+N+Wabash+Ave+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- Cabra -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="cabra">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <circle cx="50" cy="50" r="30" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <circle cx="50" cy="50" r="20" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <circle cx="50" cy="50" r="10" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <line x1="50" y1="15" x2="50" y2="25" stroke="currentColor" stroke-width="2"/>
-                            <line x1="50" y1="75" x2="50" y2="85" stroke="currentColor" stroke-width="2"/>
-                            <line x1="15" y1="50" x2="25" y2="50" stroke="currentColor" stroke-width="2"/>
-                            <line x1="75" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+            <article class="venue-card" data-venue="cabra">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop" alt="Cabra - Peruvian-inspired rooftop dining">
+                    <div class="image-overlay">
+                        <span class="venue-type">Rooftop Bar</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Cabra</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -261,44 +224,50 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 761-1717
                         </p>
-                        <p class="website">
+                        <a href="https://www.cabrachicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://www.cabrachicago.com/" target="_blank" rel="noopener">cabrachicago.com</a>
-                        </p>
+                            cabrachicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=200+N+Green+St+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=200+N+Green+St+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
         </div>
     </section>
 
-    <!-- Speakeasies Section -->
-    <section id="speakeasies" class="section speakeasies-section">
-        <div class="section-header">
-            <div class="deco-line left"></div>
-            <h2>Speakeasies</h2>
-            <div class="deco-line right"></div>
+    <!-- Art Deco Divider -->
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-ornament">
+            <svg viewBox="0 0 100 40" class="deco-ornament">
+                <polygon points="50,0 60,15 90,15 65,25 75,40 50,30 25,40 35,25 10,15 40,15" fill="currentColor"/>
+            </svg>
         </div>
-        <p class="section-intro">Discover Chicago's best-kept secrets</p>
+        <div class="divider-line"></div>
+    </div>
 
-        <div class="venues-grid">
+    <!-- Speakeasies Section -->
+    <section id="speakeasies" class="venue-section speakeasies-section">
+        <div class="section-header">
+            <div class="deco-frame">
+                <h2>Speakeasies</h2>
+            </div>
+            <p class="section-subtitle">Secret Haunts & Hidden Cocktail Dens</p>
+        </div>
+
+        <div class="venue-grid">
             <!-- Three Dots and a Dash -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="three-dots">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <circle cx="25" cy="50" r="8" fill="currentColor"/>
-                            <circle cx="50" cy="50" r="8" fill="currentColor"/>
-                            <circle cx="75" cy="50" r="8" fill="currentColor"/>
-                            <line x1="20" y1="70" x2="80" y2="70" stroke="currentColor" stroke-width="4"/>
-                        </svg>
+            <article class="venue-card" data-venue="three-dots">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600&h=400&fit=crop" alt="Three Dots and a Dash - Tiki speakeasy">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Three Dots and a Dash</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -309,32 +278,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 610-4220
                         </p>
-                        <p class="website">
+                        <a href="https://www.threedotschicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://www.threedotschicago.com/" target="_blank" rel="noopener">threedotschicago.com</a>
-                        </p>
+                            threedotschicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=435+N+Clark+St+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=435+N+Clark+St+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- The Violet Hour -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="violet-hour">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <circle cx="50" cy="50" r="35" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="50" y1="50" x2="50" y2="25" stroke="currentColor" stroke-width="3"/>
-                            <line x1="50" y1="50" x2="70" y2="50" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="50" cy="50" r="4" fill="currentColor"/>
-                        </svg>
+            <article class="venue-card" data-venue="violet-hour">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&h=400&fit=crop" alt="The Violet Hour - Elegant cocktail lounge">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>The Violet Hour</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -345,33 +309,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (773) 252-1500
                         </p>
-                        <p class="website">
+                        <a href="http://www.theviolethour.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="http://www.theviolethour.com/" target="_blank" rel="noopener">theviolethour.com</a>
-                        </p>
+                            theviolethour.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=1520+N+Damen+Ave+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1520+N+Damen+Ave+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- The Drifter -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="drifter">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <rect x="20" y="25" width="60" height="50" rx="5" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <rect x="30" y="35" width="15" height="20" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <rect x="55" y="35" width="15" height="20" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <line x1="35" y1="65" x2="65" y2="65" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="50" cy="15" r="5" stroke="currentColor" fill="none" stroke-width="2"/>
-                        </svg>
+            <article class="venue-card" data-venue="drifter">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=600&h=400&fit=crop" alt="The Drifter - 1920s era speakeasy">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>The Drifter</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -382,31 +340,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 631-3887
                         </p>
-                        <p class="website">
+                        <a href="https://thedrifterchicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://thedrifterchicago.com/" target="_blank" rel="noopener">thedrifterchicago.com</a>
-                        </p>
+                            thedrifterchicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=676+N+Orleans+St+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=676+N+Orleans+St+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- The Gatsby -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="gatsby">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <polygon points="50,10 90,40 75,90 25,90 10,40" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <polygon points="50,25 75,45 65,75 35,75 25,45" stroke="currentColor" fill="none" stroke-width="1"/>
-                            <circle cx="50" cy="50" r="10" stroke="currentColor" fill="none" stroke-width="1"/>
-                        </svg>
+            <article class="venue-card" data-venue="gatsby">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=600&h=400&fit=crop" alt="The Gatsby - Prohibition era speakeasy">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>The Gatsby</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -417,33 +371,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (773) 883-5282
                         </p>
-                        <p class="website">
+                        <a href="https://thegatsbychicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://thegatsbychicago.com/" target="_blank" rel="noopener">thegatsbychicago.com</a>
-                        </p>
+                            thegatsbychicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=2344+N+Lincoln+Ave+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=2344+N+Lincoln+Ave+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- Blind Barber -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="blind-barber">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <rect x="35" y="20" width="30" height="60" rx="15" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="35" y1="35" x2="65" y2="35" stroke="currentColor" stroke-width="1"/>
-                            <line x1="35" y1="50" x2="65" y2="50" stroke="currentColor" stroke-width="1"/>
-                            <line x1="35" y1="65" x2="65" y2="65" stroke="currentColor" stroke-width="1"/>
-                            <circle cx="50" cy="10" r="5" fill="currentColor"/>
-                        </svg>
+            <article class="venue-card" data-venue="blind-barber">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1527761939622-933c996a7a27?w=600&h=400&fit=crop" alt="Blind Barber - Hidden bar behind barbershop">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Blind Barber</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -454,34 +402,27 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (312) 405-9929
                         </p>
-                        <p class="website">
+                        <a href="https://blindbarber.com/pages/chicago" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://blindbarber.com/pages/chicago" target="_blank" rel="noopener">blindbarber.com</a>
-                        </p>
+                            blindbarber.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=948+W+Fulton+Market+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=948+W+Fulton+Market+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
 
             <!-- Bordel -->
-            <article class="venue-card">
-                <div class="venue-image" data-venue="bordel">
-                    <div class="image-overlay"></div>
-                    <div class="venue-icon">
-                        <svg viewBox="0 0 100 100" class="icon-svg">
-                            <path d="M20,80 Q50,20 80,80" stroke="currentColor" fill="none" stroke-width="2"/>
-                            <line x1="20" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="35" cy="60" r="5" fill="currentColor"/>
-                            <circle cx="50" cy="45" r="5" fill="currentColor"/>
-                            <circle cx="65" cy="60" r="5" fill="currentColor"/>
-                            <path d="M45,85 L50,95 L55,85" stroke="currentColor" fill="none" stroke-width="2"/>
-                        </svg>
+            <article class="venue-card" data-venue="bordel">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=600&h=400&fit=crop" alt="Bordel - Parisian cabaret speakeasy">
+                    <div class="image-overlay">
+                        <span class="venue-type">Speakeasy</span>
                     </div>
                 </div>
-                <div class="venue-content">
+                <div class="card-content">
                     <h3>Bordel</h3>
                     <div class="venue-details">
                         <p class="address">
@@ -492,14 +433,14 @@
                             <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             (773) 697-8003
                         </p>
-                        <p class="website">
+                        <a href="https://www.bordelchicago.com" target="_blank" class="website-link">
                             <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                            <a href="https://www.bordelchicago.com/" target="_blank" rel="noopener">bordelchicago.com</a>
-                        </p>
+                            bordelchicago.com
+                        </a>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=1721+W+Division+St+Chicago+IL" target="_blank" rel="noopener" class="btn-directions">
-                        <span>Get Directions</span>
-                        <svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=1721+W+Division+St+Chicago+IL" target="_blank" class="directions-btn">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>
+                        Get Directions
                     </a>
                 </div>
             </article>
@@ -507,17 +448,23 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-deco">
-            <svg viewBox="0 0 400 60" class="footer-svg">
-                <path d="M0,30 L100,10 L200,30 L300,10 L400,30" stroke="currentColor" fill="none" stroke-width="1"/>
-                <circle cx="100" cy="10" r="4" fill="currentColor"/>
-                <circle cx="200" cy="30" r="6" fill="currentColor"/>
-                <circle cx="300" cy="10" r="4" fill="currentColor"/>
-            </svg>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-deco">
+                <div class="deco-line"></div>
+                <span class="footer-diamond"></span>
+                <div class="deco-line"></div>
+            </div>
+            <h3>Chicago After Dark</h3>
+            <p>The Definitive Guide to Chicago's Best Rooftop Bars & Speakeasies</p>
+            <div class="footer-ornament">
+                <svg viewBox="0 0 200 30" class="art-deco-line">
+                    <path d="M0,15 L60,15 L70,5 L80,15 L100,15 L100,15 L120,15 L130,5 L140,15 L200,15" stroke="currentColor" fill="none" stroke-width="1"/>
+                    <circle cx="100" cy="15" r="3" fill="currentColor"/>
+                </svg>
+            </div>
+            <p class="copyright">&copy; 2026 Chicago After Dark. All rights reserved.</p>
         </div>
-        <p class="footer-text">Chicago's Finest Rooftop Bars & Speakeasies</p>
-        <p class="copyright">&copy; 2026 All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
