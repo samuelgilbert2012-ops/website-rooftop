@@ -554,12 +554,13 @@ body {
     line-height: 1.5;
 }
 
-.venue-details .icon {
-    width: 18px;
-    height: 18px;
-    fill: var(--color-gold);
+.venue-details i {
+    color: var(--color-gold);
+    font-size: 1rem;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 3px;
+    width: 20px;
+    text-align: center;
 }
 
 .website-link {
@@ -612,10 +613,9 @@ body {
     left: 100%;
 }
 
-.directions-btn .icon {
-    width: 18px;
-    height: 18px;
-    fill: var(--color-black);
+.directions-btn i {
+    font-size: 1rem;
+    color: var(--color-black);
 }
 
 /* Section Divider */
@@ -635,6 +635,13 @@ body {
 
 .divider-ornament {
     color: var(--color-gold);
+    font-size: 1.5rem;
+}
+
+.footer-ornament {
+    color: var(--color-gold);
+    font-size: 2rem;
+    margin: var(--space-md) 0;
 }
 
 .deco-ornament {
