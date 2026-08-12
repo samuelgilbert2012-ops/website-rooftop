@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="FS Food Group">
+  <rect x="2" y="2" width="96" height="96" rx="22" fill="#0F2A47"/>
+  <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="#E6A32E" stroke-width="4"/>
+  <g fill="#E6A32E">
+    <rect x="34" y="16" width="4" height="13" rx="2"/>
+    <rect x="48" y="16" width="4" height="13" rx="2"/>
+    <rect x="62" y="16" width="4" height="13" rx="2"/>
+    <rect x="34" y="27" width="32" height="4" rx="2"/>
+  </g>
+  <text x="50" y="72" text-anchor="middle" font-family="'Arial Narrow',Arial,sans-serif" font-weight="800" font-size="44" letter-spacing="1" fill="#FFFFFF">FS</text>
+  <rect x="28" y="80" width="44" height="4" rx="2" fill="#E6A32E"/>
+</svg>

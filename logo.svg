@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486 104" role="img" aria-label="FS Food Group — On-Site Construction Catering">
+  <title>FS Food Group</title>
+  <!-- Badge mark -->
+  <g>
+    <rect x="4" y="4" width="96" height="96" rx="24" fill="#0F2A47"/>
+    <rect x="4" y="4" width="96" height="96" rx="24" fill="none" stroke="#E6A32E" stroke-width="4"/>
+    <!-- Fork tine accent above monogram -->
+    <g fill="#E6A32E">
+      <rect x="36" y="18" width="4" height="13" rx="2"/>
+      <rect x="50" y="18" width="4" height="13" rx="2"/>
+      <rect x="64" y="18" width="4" height="13" rx="2"/>
+      <rect x="36" y="29" width="32" height="4" rx="2"/>
+    </g>
+    <text x="52" y="72" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-weight="800" font-size="42" letter-spacing="1" fill="#FFFFFF">FS</text>
+    <rect x="30" y="80" width="44" height="4" rx="2" fill="#E6A32E"/>
+  </g>
+  <!-- Wordmark -->
+  <g>
+    <text x="120" y="52" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-weight="800" font-size="40" letter-spacing="0.5" fill="#0F2A47">FS FOOD GROUP</text>
+    <text x="122" y="78" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-weight="600" font-size="13.5" letter-spacing="3.4" fill="#B07D18">ON-SITE CONSTRUCTION CATERING</text>
+  </g>
+</svg>
